@@ -13,6 +13,16 @@ body {
     font-family: 'Noto Serif TC', '微軟正黑體', 'Microsoft JhengHei', sans-serif;
     margin-top: 80px;
     color: #686868;
+    font-size: 16px;
+    --secondary-background-color:#f6f6f6;
+    --border-light: 1px solid #00000020;
+    --border-radius: 8px;
+    --common-box-shadow: 0 8px 16px 0 #00000010;
+    --common-transition-dur: 300ms;
+}
+
+.category,.home{
+    background-color: var(--secondary-background-color);
 }
 
 @media screen and (max-width: 450px) {
@@ -41,9 +51,17 @@ body {
 #editor h1 {
     font-size: 26px;
 }
+#editor h3 {
+    margin-top: 5rem!important;
+    margin-bottom: 2rem!important;
+}
+#editor img{
+    display: block;
+    margin: 2rem 0;
+}
 
 #editor p {
-    font-size: 18px;
+    line-height: 2rem!important;
 }
 
 .fr-wrapper div:first-of-type {
@@ -58,14 +76,36 @@ body {
     color: rgb(65, 65, 65);
     font-size: 36px;
     margin-bottom: 26px;
+    font-weight: 700;
 }
 
-.live_author {
+#live_author {
     color: rgb(65, 65, 65);
 }
 
-.live_authorDescription {
+#live_authorDescription {
     color: #686868;
+}
+
+.author-info{
+    margin: 3rem 0;
+    border-top: var(--border-light);
+    padding-top: 3rem;
+}
+
+.read-more{
+    background-color: var(--secondary-background-color);
+    padding: 3rem 0;
+}
+.read-more .section-title{
+    display: flex;
+}
+.read-more .section-title h1{
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-bottom: var(--border-light);
+    margin: 2rem auto ;
+    padding: 0.5rem;
 }
 
 textarea {
@@ -144,7 +184,8 @@ textarea {
 
 .article_name {
     text-align: center;
-    font-size: 22px;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 p {
@@ -345,13 +386,19 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
-    background: #DCDCDC;
+    background: white;
+    border-bottom: var(--border-light);
     transition: all 0.5s;
     z-index: 997;
     padding: 10px 0;
 }
 
+#header+div{
+    padding-top: 50px;
+}
+
 html:not([data-scroll="0"]) #header {
+    border-bottom: 1px solid #00000000;
     background: transparent;
 }
 
@@ -359,6 +406,10 @@ html:not([data-scroll="0"]) .logo_img {
     max-width: 100%;
     height: auto;
     content: url("../../assets/img/logo-1.png");
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 100%;
+    box-shadow: var(--common-box-shadow);
 }
 
 .logo_img {
@@ -366,9 +417,30 @@ html:not([data-scroll="0"]) .logo_img {
     height: auto;
     content: url("../../assets/img/logo.png");
 }
+.article-card{
+    margin-bottom: 2rem;
 
+}
+.article-card a{
+    display: block;
+    background-color: white;
+    padding: 0;
+    border-radius: var(--border-radius);
+    height: 100%;
+    transition: var(--common-transition-dur);
+}
+.article-card a:hover{
+    box-shadow: var(--common-box-shadow);
+}
+.article-card h3{
+    padding: 1rem;
+    margin-bottom: 0;
+}
+.article-card .font-italic{
+    display: none;
+}
 .img-fluid {
-    border-radius: 30px;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .d-lg-block {
@@ -410,21 +482,27 @@ html:not([data-scroll="0"]) .logo_img {
 --------------------------------------------------------------*/
 
 /* Desktop Navigation */
-
-.nav-menu ul {
+html:not([data-scroll="0"]) .nav-menu>ul{
+    box-shadow: var(--common-box-shadow);
+}
+.nav-menu>ul {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.nav-menu>ul {
     display: flex;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0 8px 16px -2 #00000000;
+    transition: var(--common-transition-dur);
+    transition-delay: 0ms !important;
+    margin-right: -24px;
+    padding: 0 12px;
 }
 
 .nav-menu>ul>li {
     position: relative;
     white-space: nowrap;
-    padding: 10px 0 10px 24px;
+    margin: 10px 12px;
 }
 
 .nav-menu a {
@@ -779,8 +857,8 @@ section {
 
 .section-title-border {
     text-align: center;
-    border-bottom: 2px #000 solid;
-    margin-bottom: 30px;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 .section-title {
@@ -794,7 +872,10 @@ section {
 
 .main-underline {
     text-align: center;
-    border-bottom: 1px solid;
+    border-bottom: var(--border-light);
+    display: inline-block;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .section-title h1 {
@@ -1877,7 +1958,8 @@ section {
 #footer {
     color: #37423b;
     font-size: 14px;
-    background: #eef0ef;
+    background: white!important;
+    margin-top: 3rem;
 }
 
 #footer .footer-top {
