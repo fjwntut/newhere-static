@@ -13,7 +13,7 @@ body {
     font-family: 'Noto Serif TC', '微軟正黑體', 'Microsoft JhengHei', sans-serif;
     margin-top: 80px;
     color: #686868;
-    font-size: 16px;
+    font-size: 1em;
     --secondary-background-color: #f6f6f6;
     --border-light: 1px solid #00000020;
     --border-radius: 8px;
@@ -1284,7 +1284,7 @@ element.style {}
     margin: 0;
     padding: 0;
     line-height: 1;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .features .icon-box h3 a {
@@ -1360,7 +1360,7 @@ element.style {}
 .courses .trainer .trainer-profile span {
     padding-left: 10px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1em;
     color: #5a6c60;
 }
 
@@ -1565,7 +1565,7 @@ element.style {}
 
 .course-details .course-info h5 {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1em;
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
@@ -1735,7 +1735,7 @@ element.style {}
     font-weight: 400;
     margin: -20px -20px 20px -20px;
     padding: 20px 15px;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 600;
     color: #777777;
     background: #f8f8f8;
@@ -1757,7 +1757,7 @@ element.style {}
 
 .pricing h4 span {
     color: #bababa;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 300;
 }
 
@@ -1771,7 +1771,7 @@ element.style {}
 }
 
 .pricing ul li {
-    padding-bottom: 16px;
+    padding-bottom: 1em;
 }
 
 .pricing ul i {
@@ -2031,7 +2031,7 @@ element.style {}
 }
 
 #footer .footer-top h4 {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
     color: #444444;
     position: relative;
@@ -2082,7 +2082,7 @@ element.style {}
 }
 
 #footer .footer-newsletter h4 {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
     color: #444444;
     position: relative;
@@ -2112,7 +2112,7 @@ element.style {}
     bottom: -1px;
     border: 0;
     background: none;
-    font-size: 16px;
+    font-size: 1em;
     padding: 0 20px 2px 20px;
     background: #5fcf80;
     color: #fff;
